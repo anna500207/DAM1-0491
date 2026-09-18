@@ -7,10 +7,5 @@
 }
 
 .textCeles {
-    justify-content: center;
-}
-
-#celaPATI{
-    background-color: crimson
-    color(whitesmoke);
+    text-align: center;
 }

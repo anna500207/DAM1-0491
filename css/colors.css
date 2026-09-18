@@ -1,10 +1,44 @@
 #celaPati {
-    background-color: crimson;
+    background-color: rgb(243, 35, 149);
     color: whitesmoke
 }
 
 .celaWeb{
-    background-color: darkblue;
+    background-color: rgb(64, 218, 128);
     color: whitesmoke
 }
 
+.celaProgram{
+    background-color: rgb(241, 224, 67);
+    color: whitesmoke
+}
+
+.celaSistemes{
+    background-color: rgb(114, 65, 25);
+    color: whitesmoke
+}
+
+.celaBasedades{
+    background-color: rgb(231, 104, 31);
+    color: whitesmoke
+}
+
+.celaerp{
+    background-color: rgb(204, 13, 204);
+    color: whitesmoke
+}
+
+#celaturoria{
+    background-color: rgb(135, 211, 241);
+    color: whitesmoke
+}
+
+.celaIpoI{
+    background-color: rgb(81, 81, 248);
+    color: whitesmoke
+}
+
+.celaIpoII{
+    background-color: rgb(250, 25, 25);
+    color: whitesmoke
+}
