@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contracta'm - Validació</title>
+        <meta name="description" content="formulari amb validació html5">
+        <meta name="author" content="Anna Reina">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Formulari de Validació</h1>
+    </header>
+
+    <main>
+      <h2>Dades d'usuari</h2>
+      <form action="./login.php" method="POST">
+    
+    
+        <p>
+          <label for="nom"><b>Usuari</b></label>
+          <input id="nom" type="text" placeholder="Escriu el teu nom" name="uname" required>
+        </p>
+
+        
+        <p>
+          <label for="idEmail"><b>Correu electrònic</b></label>
+          <input id="idEmail" type="email" placeholder="exemple@correu.com" name="correo" required>
+        </p>
+
+    
+        <p>
+          <label for="pwd"><b>Contrasenya</b></label>
+          <input id="pwd" type="password" placeholder="Mínim 8 caràcters" name="password" minlength="8" required>
+        </p>
+
+        
+        <p>
+          <label for="telf"><b>Telèfon</b></label>
+          <input id="telf" type="tel" placeholder="Ex: 612345678" name="telefono" pattern="[0-9]{9}" title="El telèfon ha de tenir exactament 9 dígits numèrics" required>
+        </p>
+
+      
+        <p>
+          <button type="submit">Envia</button>
+        </p>
+        <p>
+          <input value="Neteja el formulari" type="reset">
+        </p>
+      </form>
+    </main>
+
+    <footer>
+      <p>Creat per: Anna Reina</p>
+    </footer>
+  </body>
+</html>

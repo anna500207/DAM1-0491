@@ -11,12 +11,34 @@
   </head>
   <body>
     <header>
-      <h1>Contacte</h1>
+      <h1>Formulari</h1>
     </header>
 
+
     <main>
-      <h2>informació</h2>
-        <p>anna.reinaa@educem.net</p>
+      <h2>dades</h2>
+          <form action="./login.php" method="POST">
+    
+    <p>
+      <label for="user"><b>Usuari</b></label>
+      <input id="user" type="text" placeholder="Escriu el teu nom" name="uname" required>
+    </p>
+     <p>
+      <label for="Correu electronic"><b>Correu electronic</b></label>
+      <input type="email" id="idEmail" name="correo" placeholder="Escriu el teu correu electrònic">
+    </p>
+    <p>
+      <label for="pwd"><b>Contrasenya</b></label>
+      <input id="pwd" type="password" placeholder="Introduce tu contraseña" name="password" required>
+    </p>
+    <textarea name=observaciones rows="10" cols="100"></textarea>
+    <p>
+      <button type="submit">envia</button>
+    </p>
+    <p>
+    <input value="Limpia el Formulario!" type="reset">co
+    </p>
+  </form>
     
         
     </main>

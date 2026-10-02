@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contracta'm - Registre</title>
+        <meta name="description" content="formulari de registre">
+        <meta name="author" content="Anna Reina">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Formulari de Registre</h1>
+    </header>
+
+    <main>
+      <h2>Dades</h2>
+      <form action="./login.php" method="POST">
+    
+      
+        <p>
+          <label for="user"><b>Usuari</b></label>
+          <input id="user" type="text" placeholder="Escriu el teu nom" name="uname" required>
+        </p>
+
+       
+        <p>
+          <label for="idEmail"><b>Correu electrònic</b></label>
+          <input type="email" id="idEmail" name="correo" placeholder="Escriu el teu correu electrònic" required>
+        </p>
+
+       
+        <p>
+          <label for="pwd"><b>Contrasenya</b></label>
+          <input id="pwd" type="password" placeholder="Introdueix la teva contrasenya" name="password" required>
+        </p>
+
+       
+        <p>
+          <input type="checkbox" id="termes" name="accepto_termes" required>
+          <label for="termes">Accepto els termes i condicions</label>
+        </p>
+
+       
+        <p>
+          <button type="submit">Envia</button>
+        </p>
+        <p>
+          <input value="Neteja el formulari" type="reset">
+        </p>
+      </form>
+    </main>
+
+    <footer>
+      <p>Creat per: Anna Reina</p>
+    </footer>
+  </body>
+</html>
