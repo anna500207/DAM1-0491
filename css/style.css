@@ -47,7 +47,9 @@ html::before {
 .header {
     grid-column: 1 / -1;
     grid-row: 1;
+    font-size: 200%;
     align-items: center;
+    text-decoration: underline;
 }
 
 .nav {
@@ -133,4 +135,92 @@ html::before {
 
 .flexRow {
     flex-direction: row;
+}
+
+.lis{
+  text-align: left; 
+}
+
+a:visited{
+    background-color: rgb(240, 207, 227);
+    color: rgb(128, 0, 81);
+}
+
+a:link{
+    background-color: rgb(165, 207, 239);
+    color: rgb(9, 61, 100);
+}
+
+a:hover{
+    background-color: rgb(255, 206, 255);
+}
+
+a:active{
+    background-color: rgb(226, 43, 165);
+    color: rgb(255, 188, 239);
+}
+
+input:required{
+    color: rgb(81, 12, 65);
+}
+
+input:optional{
+    color: rgb(255, 101, 222);
+}
+
+input:checked{
+    height: 20px;
+    width:  20px;
+}
+
+input:focus{
+    background-color: rgb(218, 255, 255);
+}
+/* p:first-child{
+    background: linear-gradient(pink, rgb(168, 255, 251));
+}
+
+p:first-of-type{
+    background: linear-gradient(rgb(90, 192, 235), rgb(63, 42, 117));
+}
+
+p:last-child{
+    background: linear-gradient(rgb(56, 6, 59), rgb(214, 168, 255));
+}
+
+p:nth-child(3){
+     background: linear-gradient(rgb(155, 201, 221), rgb(153, 113, 255));
+}
+
+p:nth-of-type(2){
+     background: linear-gradient(rgb(249, 102, 149), rgb(234, 62, 231));
+} */
+
+/* h2::after{
+    content: " - recuerda!";
+    background: linear-gradient(rgb(254, 165, 255), rgb(203, 243, 250));
+    color:rgb(13, 8, 31);
+    font-weight: bold;
+}
+
+h2::before{
+    content: " - olvida!";
+    background: linear-gradient(rgb(254, 165, 255), rgb(203, 243, 250));
+    color:rgb(13, 8, 31);
+    font-weight: bold;
+} */
+
+/* p::first-letter{
+    font-size: 200%;
+    color: darkblue;
+} */
+
+/* p::first-line{
+    font-size: 200%;
+    color: darkblue;
+} */
+
+::selection{
+    color: rgb(127, 255, 249);
+    background-color: darkblue;
 }
