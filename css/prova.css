@@ -111,6 +111,18 @@
 
     }
 
+     .flextext2 {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        display:inline;
+
+        
+
+
+    }
+
 
     .cajitapeque {
         height: 10%;
@@ -342,6 +354,19 @@
         display: block;
         flex-direction: column;
         flex-wrap: wrap;
+
+
+    }
+
+     
+
+     .flextext2 {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        
 
 
     }

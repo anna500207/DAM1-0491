@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="cat">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Multimedia Time</title>
+    <meta name="description" content="multimedia" />
+    <meta name="author" content="Anna Reina" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./../css/provagrid.css" />
+    <link rel="stylesheet" href="./../css/colors.css" />
+    <link rel="stylesheet" href="estils-cor.css" />
+</head>
+
+<body>
+    <div class="cajitapeque">
+        <div class="cajitamini">
+            <p class="borderojo">Renove -100€</p>
+        </div>
+        <div class="cajitamini2">
+            <p class="borderojo">Top venta</p>
+        </div>
+    </div>
+    <div class="cajamadre">
+        
+        <p>Portátil-Lenovo IdeaPad Slim 3 15IPH11 Copilot+ PC, 15.3" wuxga, Intel
+            <br>Core tm Ultra 5 322, 46 TOPS, 16GB RAM, 512GB SSD, W11H, Sin cargador</br>
+        </p>
+        
+
+        <div>
+            <div class="flexcajitas">
+
+                <img class="imagencajita" src="../img/portatil.png" alt="#">
+
+                <div class="flextext">
+                    <p>Procesador</p>
+                    <p>Intel Coretm Ultra 5 322</p>
+
+                    <p>Tamaño de la memoria RAM</p>
+                    <p>16 GB</p>
+
+                    <p>Capacidad del disco duro 1</p>
+                    <p>512 GB</p>
+
+                    <p>Targeta gráfica</p>
+                    <p>HD Graphics</p>
+                </div>
+
+
+                <div class="flextext2">
+                    <h2 class="rojo">67,20 €</h2>
+                    <p>IVA</p>
+                    <p>Simula tu financiacion</p>
+                </div>
+                <div class ="flextext2">
+                    <p>Disponible online</p>
+                    <p>Entrega 26/10/2026</p>
+
+                    <p>Recogida en tienda</p>
+                    <p>Consulat disponibilidad</p>
+
+                    <p>Seleccionar tienda</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="clasificacion">
+            <input id="radio1" type="radio" name="estrellas" value="5">
+            <label for="radio1">★</label>
+            <input id="radio2" type="radio" name="estrellas" value="4">
+            <label for="radio2">★</label>
+            <input id="radio3" type="radio" name="estrellas" value="3">
+            <label for="radio3">★</label>
+            <input id="radio4" type="radio" name="estrellas" value="2">
+            <label for="radio4">★</label>
+            <input id="radio5" type="radio" name="estrellas" value="1">
+            <label for="radio5">★</label>
+        </div>
+
+        <div class="cajitapeque">
+            <div class="cajitaminiend">
+                <div>
+                    <input id="Comparar" name="Comparar" type="checkbox">
+                    <label for="Comparar">Comparar</label>
+                </div>
+                <div>
+                    <input id="button" type="button" value="Añadir al carrito" onclick="alert('Añadido a la cesta!');">
+                    
+                    <button type="button" class="boto-cor" id="meuBotoCor">
+                        <span class="icona-cor">❤️</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        const botoCor = document.getElementById('meuBotoCor');
+
+        botoCor.addEventListener('click', () => {
+            botoCor.classList.toggle('actiu');
+
+            if (botoCor.classList.contains('actiu')) {
+                for (let i = 0; i < 6; i++) {
+                    crearMiniCor();
+                }
+            }
+        });
+
+        function crearMiniCor() {
+            const miniCor = document.createElement('span');
+            miniCor.classList.add('mini-cor');
+            miniCor.innerHTML = '❤️';
+
+            const angle = Math.random() * Math.PI * 2;
+            const distancia = 40 + Math.random() * 40;
+            const x = Math.cos(angle) * distancia + 'px';
+            const y = Math.sin(angle) * distancia + 'px';
+
+            miniCor.style.setProperty('--x', x);
+            miniCor.style.setProperty('--y', y);
+
+            botoCor.appendChild(miniCor);
+
+            setTimeout(() => {
+                miniCor.remove();
+            }, 800);
+        }
+    </script>
+</body>
+
+</html>
